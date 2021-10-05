@@ -76,14 +76,10 @@
   position: fixed;
   background-color: #ed7966;
   bottom: 0px;
-  column-gap: 10px;
   width: 100%;
 }
 
 .homebutton {
   color: #141850;
   list-style: none;
-
-  padding: 4px;
-  border-style: dotted;
 }
