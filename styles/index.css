@@ -6,63 +6,50 @@
 .body {
   background-color: #fae5df;
   color: #141850;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 60px auto 60px;
 }
 .headline {
   background-color: #ed7966;
   position: fixed;
   width: 100%;
-  display: flex;
   top: 0;
-  justify-content: center;
-  height: 1.4em;
-  align-items: center;
   font-family: calibri;
   margin: 0;
+  text-align: center;
 }
 
-.headderspace {
-  margin-top: 3em;
+.main {
+  display: grid;
+  grid-gap: 10px;
 }
-
 .card-set {
-  background-color: #f5cac2;
-  border-style: groove;
-  border-color: #141850;
-  margin: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  border-style: outset;
+  background: #e6cbb5;
+  width: 96%;
+  justify-self: center;
 }
 
 .button {
-  justify-content: center;
-  background-color: #fae5df;
-  margin-left: 3em;
-  margin-right: 3em;
-  padding: 2px;
+  justify-self: center;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .ul-card {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  overflow: hidden;
-  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
 }
 
 .tag {
-  padding: 3px;
-  border-style: groove;
-  padding: 0.3em;
-  border-radius: 10px;
-  margin: 3px;
-  background-color: #303179;
-  color: #fae5df;
+  list-style: none;
+  display: inline;
+  border-radius: 15px;
+  border-style: inset;
+  padding: 3px 1px;
+  margin-bottom: 5px;
 }
 
 .bold {
@@ -70,13 +57,20 @@
 }
 .blocksatz {
   text-align: justify;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
 }
 
 .nav {
-  position: fixed;
   background-color: #ed7966;
   bottom: 0px;
   width: 100%;
+  position: fixed;
+}
+.menubar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .homebutton {
@@ -85,14 +79,15 @@
   display: inline-block;
   height: 60px;
   width: 60px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-self: center;
+  display: grid;
 }
 
 svg {
   fill: #303179;
-  transform: scale(2);
+  transform: scale(1.8);
+  justify-self: center;
+  align-self: center;
 }
 
 svg:hover {
@@ -103,7 +98,4 @@ ul {
   padding: 0;
   margin: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
 }
