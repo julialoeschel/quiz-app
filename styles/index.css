@@ -19,6 +19,10 @@
   text-align: center;
 }
 
+.bookmarklabel {
+  justify-self: end;
+}
+
 .main {
   display: grid;
   grid-gap: 10px;
@@ -29,27 +33,34 @@
   background: #e6cbb5;
   width: 96%;
   justify-self: center;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .button {
   justify-self: center;
   text-transform: uppercase;
   margin-bottom: 15px;
+  background-color: #fae5df;
 }
 
 .ul-card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .tag {
   list-style: none;
   display: inline;
   border-radius: 15px;
-  border-style: inset;
-  padding: 3px 1px;
+  padding: 1px 3px;
   margin-bottom: 5px;
+  background-color: #303179;
+  color: #fae5df;
+  text-align: center;
 }
 
 .bold {
