@@ -1,29 +1,33 @@
 * {
   box-sizing: border-box;
-  margin-left: 0;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 60px auto 60px;
 }
 
 .body {
+  margin: 0;
+  padding: 0;
   background-color: #fae5df;
   color: #141850;
-  display: flex;
-  flex-direction: column;
+  overflow-y: auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 .headline {
   background-color: #ed7966;
   position: fixed;
   width: 100%;
-  display: flex;
   top: 0;
-  justify-content: center;
-  height: 1.4em;
-  align-items: center;
   font-family: calibri;
   margin: 0;
+  padding: 0;
 }
 
 .headderspace {
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 .card-set {
@@ -33,12 +37,11 @@
   margin: 1em;
   padding-left: 1em;
   padding-right: 1em;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .button {
-  justify-content: center;
   background-color: #fae5df;
   margin-left: 3em;
   margin-right: 3em;
@@ -48,9 +51,6 @@
 
 .ul-card {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   overflow: hidden;
   padding: 0;
 }
@@ -73,7 +73,10 @@
 }
 
 .nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   position: fixed;
+  justify-content: center;
   background-color: #ed7966;
   bottom: 0px;
   width: 100%;
@@ -83,27 +86,12 @@
   color: #141850;
   list-style: none;
   display: inline-block;
-  height: 60px;
-  width: 60px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 svg {
   fill: #303179;
-  transform: scale(2);
 }
 
 svg:hover {
   fill: white;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
 }
