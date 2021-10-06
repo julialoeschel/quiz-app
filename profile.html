@@ -8,62 +8,33 @@
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body class="body">
-    <header><h1 class="headline">Bookmarks</h1></header>
+    <header><h1 class="headline">Profile</h1></header>
     <main class="main">
-      <div class="card-set">
-        <svg
-          class="card-set__bookmarklabel"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
-        </svg>
-        <h2 class="bold">Question</h2>
-        <p class="card-set__blocksatz">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua?
+      <div class="profile">
+        <img
+          class="profile_picture"
+          src="https://source.unsplash.com/random/200x200"
+          alt=""
+        />
+        <h2 class="bold blue">John Doe</h2>
+        <p class="card-set__blocksatz profile__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quo
+          cupiditate dolores recusandae perferendis Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Est, non alias! Explicabo consequuntur
+          sequi quam, dolores labore sit, cumque nobis tenetur aperiam, sunt
+          quae quo et perferendis. Exercitationem, consequatur similique?.
         </p>
-        <button class="button" type="button">show answer</button>
-        <ul class="card-set__ul-card">
+        <ul class="card-set__ul-card profile__text">
+          <li class="card-set__tag">#html</li>
+          <li class="card-set__tag">#css</li>
+          <li class="card-set__tag">#grid</li>
+          <li class="card-set__tag">#responsive</li>
           <li class="card-set__tag">#html</li>
           <li class="card-set__tag">#css</li>
           <li class="card-set__tag">#grid</li>
           <li class="card-set__tag">#responsive</li>
         </ul>
-      </div>
-      <!--KLICK ANSWER-->
-      <div class="card-set">
-        <svg
-          class="card-set__bookmarklabel"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
-        </svg>
-        <h2 class="bold">Question</h2>
-        <p class="card-set__blocksatz">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua?
-        </p>
-        <button class="button" type="button">hide answer</button>
-        <h2 class="bold">Answer</h2>
-        <p class="card-set__blocksatz">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et.
-        </p>
-
-        <ul class="card-set__ul-card">
-          <li class="card-set__tag">#html</li>
-          <li class="card-set__tag">#css</li>
-          <li class="card-set__tag">#grid</li>
-          <li class="card-set__tag">#responsive</li>
-        </ul>
+        <button class="button profile__text" type="button">logout</button>
       </div>
     </main>
     <nav class="nav">
@@ -80,7 +51,7 @@
             />
           </svg>
         </li>
-        <li class="nav__homebutton nav__active">
+        <li class="nav__homebutton">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -103,7 +74,7 @@
             />
           </svg>
         </li>
-        <li class="nav__homebutton">
+        <li class="nav__homebutton nav__active">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

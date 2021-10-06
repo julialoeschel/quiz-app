@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-.bookmarklabel {
+.card-set__bookmarklabel {
   justify-self: end;
 }
 
@@ -44,7 +44,7 @@
   background-color: #fae5df;
 }
 
-.ul-card {
+.card-set__ul-card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 5px;
@@ -52,7 +52,7 @@
   padding-right: 5px;
 }
 
-.tag {
+.card-set__tag {
   list-style: none;
   display: inline;
   border-radius: 15px;
@@ -63,10 +63,7 @@
   text-align: center;
 }
 
-.bold {
-  font-weight: bold;
-}
-.blocksatz {
+.card-set__blocksatz {
   text-align: justify;
   margin: 0;
   padding: 0;
@@ -79,12 +76,12 @@
   width: 100%;
   position: fixed;
 }
-.menubar {
+.nav__menubar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.homebutton {
+.nav__homebutton {
   color: #141850;
   list-style: none;
   display: inline-block;
@@ -109,4 +106,45 @@ ul {
   padding: 0;
   margin: 0;
   width: 100%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.nav__active {
+  background: #faecea;
+}
+
+.create__headline {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.create {
+  display: grid;
+  align-items: center;
+  border: none;
+}
+
+.profile {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 2em;
+}
+
+.profile_picture {
+  border-radius: 50%;
+  align-items: center;
+}
+
+.blue {
+  color: #141850;
+}
+
+.profile__text {
+  grid-column: 1/3;
+  margin-top: 20px;
 }

@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body class="body">
-    <header class="headderspace"><h1 class="headline">Quiz-App</h1></header>
+    <header><h1 class="headline">Quiz-App</h1></header>
     <main class="main">
       <div class="card-set">
         <svg
-          class="bookmarklabel"
+          class="card-set__bookmarklabel"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -21,23 +21,23 @@
           <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
         </svg>
         <h2 class="bold">Question</h2>
-        <p class="blocksatz">
+        <p class="card-set__blocksatz">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua?
         </p>
         <button class="button" type="button">show answer</button>
-        <ul class="ul-card">
-          <li class="tag">#html</li>
-          <li class="tag">#css</li>
-          <li class="tag">#grid</li>
-          <li class="tag">#responsive</li>
+        <ul class="card-set__ul-card">
+          <li class="card-set__tag">#html</li>
+          <li class="card-set__tag">#css</li>
+          <li class="card-set__tag">#grid</li>
+          <li class="card-set__tag">#responsive</li>
         </ul>
       </div>
       <!--KLICK ANSWER-->
       <div class="card-set">
         <svg
-          class="bookmarklabel"
+          class="card-set__bookmarklabel"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -46,26 +46,28 @@
           <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
         </svg>
         <h2 class="bold">Question</h2>
-        <p class="blocksatz">
+        <p class="card-set__blocksatz">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua?
         </p>
-        <button class="button" type="button">answer</button>
-        <p class="blocksatz">
+        <button class="button" type="button">hide answer</button>
+        <h2 class="bold">Answer</h2>
+        <p class="card-set__blocksatz">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua?
+          nonumy eirmod tempor invidunt ut labore et.
         </p>
-        <ul class="ul-card">
-          <li class="tag">#html</li>
-          <li class="tag">#css</li>
-          <li class="tag">#grid</li>
+
+        <ul class="card-set__ul-card">
+          <li class="card-set__tag">#html</li>
+          <li class="card-set__tag">#css</li>
+          <li class="card-set__tag">#grid</li>
+          <li class="card-set__tag">#responsive</li>
         </ul>
       </div>
       <div class="card-set">
         <svg
-          class="bookmarklabel"
+          class="card-set__bookmarklabel"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -74,25 +76,23 @@
           <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
         </svg>
         <h2 class="bold">Question</h2>
-        <p class="blocksatz">
+        <p class="card-set__blocksatz">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua?
         </p>
         <button class="button" type="button">show answer</button>
-        <ul class="ul-card">
-          <li class="tag">#html</li>
-          <li class="tag">#css</li>
-          <li class="tag">#grid</li>
-          <li class="tag">#responsive</li>
-          <li class="tag">#xxx</li>
-          <li class="tag">#yy</li>
+        <ul class="card-set__ul-card">
+          <li class="card-set__tag">#html</li>
+          <li class="card-set__tag">#css</li>
+          <li class="card-set__tag">#grid</li>
+          <li class="card-set__tag">#responsive</li>
         </ul>
       </div>
     </main>
     <nav class="nav">
-      <ul class="menubar">
-        <li class="homebutton">
+      <ul class="nav__menubar">
+        <li class="nav__homebutton nav__active">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -104,7 +104,7 @@
             />
           </svg>
         </li>
-        <li class="homebutton">
+        <li class="nav__homebutton">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -114,7 +114,7 @@
             <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
           </svg>
         </li>
-        <li class="homebutton">
+        <li class="nav__homebutton">
           <svg
             width="24"
             height="24"
@@ -127,7 +127,7 @@
             />
           </svg>
         </li>
-        <li class="homebutton">
+        <li class="nav__homebutton">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
