@@ -42,6 +42,8 @@
   text-transform: uppercase;
   margin-bottom: 15px;
   background-color: #fae5df;
+  padding: 5px;
+  border-color: #141850;
 }
 
 .card-set__ul-card {
@@ -147,4 +149,9 @@ ul {
 .profile__text {
   grid-column: 1/3;
   margin-top: 19px;
+}
+
+.profile__border {
+  border-style: ridge;
+  border-color: #141850;
 }
