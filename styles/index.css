@@ -89,11 +89,17 @@
 .nav__homebutton {
   color: #141850;
   list-style: none;
-  display: inline-block;
   height: 60px;
   width: 60px;
+}
+
+.nav__link {
+  display: inline-block;
   justify-self: center;
   display: grid;
+  align-self: center;
+  height: 60px;
+  width: 60px;
 }
 
 svg {
