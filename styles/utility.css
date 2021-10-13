@@ -5,3 +5,14 @@
 .blue {
   color: #141850;
 }
+.input-hidden {
+  opacity: 0;
+}
+
+.bookmark--booked {
+  fill: azure;
+}
+
+.xx {
+  background: turquoise;
+}

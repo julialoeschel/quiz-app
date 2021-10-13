@@ -20,7 +20,16 @@
 }
 
 .card-set__bookmarklabel {
-  justify-self: end;
+  position: absolute;
+  top: 2px;
+  right: 15px;
+}
+.card-set__button {
+  color: transparent;
+}
+
+.card-set__bookmarklabel--booked {
+  fill: #ee632c;
 }
 
 .main {
@@ -33,8 +42,10 @@
   background: #e6cbb5;
   width: 96%;
   justify-self: center;
+  align-self: center;
   padding-left: 5px;
   padding-right: 5px;
+  position: relative;
 }
 
 .button {
@@ -44,6 +55,8 @@
   background-color: #fae5df;
   padding: 5px;
   border-color: #141850;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-set__ul-card {
@@ -86,11 +99,17 @@
 .nav__homebutton {
   color: #141850;
   list-style: none;
-  display: inline-block;
   height: 60px;
   width: 60px;
+}
+
+.nav__link {
+  display: inline-block;
   justify-self: center;
   display: grid;
+  align-self: center;
+  height: 60px;
+  width: 60px;
 }
 
 svg {
@@ -98,10 +117,6 @@ svg {
   transform: scale(1.8);
   justify-self: center;
   align-self: center;
-}
-
-svg:hover {
-  fill: white;
 }
 
 ul {
@@ -154,4 +169,12 @@ ul {
 .profile__border {
   border-style: ridge;
   border-color: #242970;
+}
+
+.input-hidden {
+  opacity: 0;
+}
+
+.hidden {
+  display: none;
 }
