@@ -3,6 +3,9 @@ const showAnswer = document.querySelector(".js-btn-showAnswer");
 const hideAnswer = document.querySelector(".js-btn-hideAnswer");
 const showAnswerH = document.querySelector(".js-answer-heading ");
 const hideAnswerT = document.querySelector(".js-answer-text");
+const bookmark = document.querySelector(".js-bookmark");
+const homebtn = document.querySelector(".js-home-btn");
+const bookmarkbtn = document.querySelector(".js-bookmark-btn");
 
 toggleAnswerButton.addEventListener("click", () => {
   showAnswer.classList.toggle("hidden");
@@ -11,14 +14,9 @@ toggleAnswerButton.addEventListener("click", () => {
   hideAnswerT.classList.toggle("hidden");
 });
 
-const bookmark = document.querySelector(".js-bookmark");
-
 bookmark.addEventListener("click", () => {
   bookmark.classList.toggle("card-set__bookmarklabel--booked");
 });
-
-const homebtn = document.querySelector(".js-home-btn");
-const bookmarkbtn = document.querySelector(".js-bookmark-btn");
 
 homebtn.addEventListener("click", () => {
   homebtn.classList.add("nav__active");
