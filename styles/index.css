@@ -24,6 +24,13 @@
   top: 2px;
   right: 15px;
 }
+.card-set__button {
+  color: transparent;
+}
+
+.card-set__bookmarklabel--booked {
+  fill: #ee632c;
+}
 
 .main {
   display: grid;
@@ -35,6 +42,7 @@
   background: #e6cbb5;
   width: 96%;
   justify-self: center;
+  align-self: center;
   padding-left: 5px;
   padding-right: 5px;
   position: relative;
@@ -47,6 +55,8 @@
   background-color: #fae5df;
   padding: 5px;
   border-color: #141850;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-set__ul-card {
@@ -109,10 +119,6 @@ svg {
   align-self: center;
 }
 
-svg:hover {
-  fill: white;
-}
-
 ul {
   padding: 0;
   margin: 0;
@@ -167,4 +173,8 @@ ul {
 
 .input-hidden {
   opacity: 0;
+}
+
+.hidden {
+  display: none;
 }
