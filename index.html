@@ -4,13 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>document</title>
     <link rel="stylesheet" href="styles/index.css" />
-    <script src="index.js" defer></script>
+    <script type="module" src="index.js" defer></script>
   </head>
   <body class="body">
-    <header><h1 class="headline">Quiz-App</h1></header>
-    <main class="main">
+    <main data-js="main-home" class="main">
+      <header><h1 class="headline">Quiz-App</h1></header>
+      <div data-js="card-set" class="card-set">
+        <svg
+          data-js="bookmark"
+          class="card-set__bookmarklabel"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewbox="0 0 24 24"
+        >
+          <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
+        </svg>
+
+        <h2 class="bold">Question</h2>
+        <p class="card-set__blocksatz">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua?
+        </p>
+
+        <button class="button js-btn-answer" type="button">
+          <span class="js-btn-showAnswer">show</span>
+          <span class="js-btn-hideAnswer hidden">hide</span>
+          answer
+        </button>
+        <h2 class="bold js-answer-heading hidden">Answer</h2>
+        <p class="card-set__blocksatz js-answer-text hidden">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et.
+        </p>
+
+        <ul class="card-set__ul-card">
+          <li class="card-set__tag">#html</li>
+          <li class="card-set__tag">#css</li>
+          <li class="card-set__tag">#grid</li>
+          <li class="card-set__tag">#responsive</li>
+        </ul>
+      </div>
+
+      <div data-js="card-set" class="card-set">
+        <svg
+          data-js="bookmark"
+          class="card-set__bookmarklabel js-bookmark"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewbox="0 0 24 24"
+        >
+          <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
+        </svg>
+
+        <h2 class="bold">Question</h2>
+        <p class="card-set__blocksatz">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua?
+        </p>
+
+        <button data-js="btn-answer" class="button" type="button">
+          <span data-js="btn-show" class="">show</span>
+          <span data-js="btn-hide" class="hidden">hide</span>
+          answer
+        </button>
+        <h2 class="bold js-answer-heading hidden">Answer</h2>
+        <p class="card-set__blocksatz js-answer-text hidden">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et.
+        </p>
+
+        <ul class="card-set__ul-card">
+          <li class="card-set__tag">#html</li>
+          <li class="card-set__tag">#css</li>
+          <li class="card-set__tag">#grid</li>
+          <li class="card-set__tag">#responsive</li>
+        </ul>
+      </div>
+    </main>
+
+    <main data-js="main-bookmark" class="main hidden">
+      <header><h1 class="headline">Bookmarks</h1></header>
       <div class="card-set">
         <svg
           class="card-set__bookmarklabel js-bookmark"
@@ -48,6 +127,73 @@
         </ul>
       </div>
     </main>
+
+    <main data-js="main-create" class="main hidden">
+      <header><h1 class="headline">Create</h1></header>
+      <fieldset class="create">
+        <label class="create__headline" for="create-question"
+          >Add question</label
+        ><br />
+        <textarea
+          name="create-question"
+          id="create-question-1"
+          cols="40"
+          rows="10"
+        ></textarea>
+        <br />
+        <label class="create__headline" for="create-answer">Add answer</label
+        ><br />
+        <textarea
+          name="create-answer"
+          id="create-answer"
+          cols="40"
+          rows="10"
+        ></textarea>
+        <br />
+        <label class="create__headline" for="create-label"
+          >Add tags, devided by comma</label
+        ><br />
+        <textarea
+          name="create-label"
+          id="create-label"
+          cols="40"
+          rows="3"
+        ></textarea>
+        <br />
+        <input class="button" id="create-question" type="submit" />
+      </fieldset>
+    </main>
+
+    <main data-js="main-profile" class="main hidden">
+      <header><h1 class="headline">Profile</h1></header>
+      <div class="profile">
+        <img
+          class="profile_picture"
+          src="https://source.unsplash.com/random/200x200"
+          alt=""
+        />
+        <h2 class="bold blue">John Doe</h2>
+        <p class="card-set__blocksatz profile__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quo
+          cupiditate dolores recusandae perferendis Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Est, non alias! Explicabo consequuntur
+          sequi quam, dolores labore sit, cumque nobis tenetur aperiam, sunt
+          quae quo et perferendis. Exercitationem, consequatur similique?.
+        </p>
+        <ul class="card-set__ul-card profile__text">
+          <li class="card-set__tag">#html</li>
+          <li class="card-set__tag">#css</li>
+          <li class="card-set__tag">#grid</li>
+          <li class="card-set__tag">#responsive</li>
+          <li class="card-set__tag">#html</li>
+          <li class="card-set__tag">#css</li>
+          <li class="card-set__tag">#grid</li>
+          <li class="card-set__tag">#responsive</li>
+        </ul>
+        <button class="button profile__text" type="button">logout</button>
+      </div>
+    </main>
+
     <nav class="nav">
       <ul class="nav__menubar">
         <li class="nav__homebutton js-home-btn">
