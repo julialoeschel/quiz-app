@@ -62,6 +62,10 @@
   flex-direction: column;
 }
 
+.mt-15 {
+  margin-top: 15px;
+}
+
 .card-set__ul-card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -149,6 +153,12 @@ ul {
   display: grid;
   align-items: center;
   border: none;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.create__headline--small {
+  color: #62637c;
+  font-size: 0.8em;
 }
 
 .profile {
@@ -185,8 +195,4 @@ ul {
 
 .hidden {
   display: none;
-}
-
-.bg-blue {
-  background-color: #303179;
 }

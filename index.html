@@ -9,7 +9,7 @@
     <script type="module" src="index.js" defer></script>
   </head>
   <body class="body">
-    <main data-js="main-home" class="main">
+    <main data-js="main-home" class="main hidden">
       <h1 class="headline">Quiz-App</h1>
       <div class="card-sections">
         <div data-js="card-set" class="card-set">
@@ -245,30 +245,48 @@
       </div>
     </main>
 
-    <main data-js="main-create" class="main hidden">
+    <main data-js="main-create" class="main">
       <header><h1 class="headline">Create</h1></header>
       <fieldset class="create">
         <label class="create__headline" for="create-question"
-          >Add question</label
+          >Add question
+          <small class="create__headline--small"
+            >(<span data-js="create-amount-add-question">300 </span> charackters
+            left)</small
+          ></label
         ><br />
         <textarea
+          data-js="text-addquestion"
           name="create-question"
           id="create-question-1"
           cols="40"
-          rows="10"
+          rows="8"
+          maxlength="300"
+          placeholder="Add your question here..."
         ></textarea>
         <br />
-        <label class="create__headline" for="create-answer">Add answer</label
+        <label class="create__headline mt-15" for="create-answer"
+          >Add answer
+          <small class="create__headline--small"
+            >(<span data-js="create-amount-add-answer">500 </span> charackters
+            left)</small
+          ></label
         ><br />
         <textarea
+          data-js="text-addanswer"
           name="create-answer"
           id="create-answer"
           cols="40"
           rows="10"
+          maxlength="500"
+          placeholder="Add your answer here..."
         ></textarea>
         <br />
-        <label class="create__headline" for="create-label"
-          >Add tags, devided by comma</label
+        <label class="create__headline mt-15" for="create-label"
+          >Add tags
+          <small class="create__headline--small"
+            >(devided by comma)</small
+          > </label
         ><br />
         <textarea
           name="create-label"
@@ -277,7 +295,7 @@
           rows="3"
         ></textarea>
         <br />
-        <input class="button" id="create-question" type="submit" />
+        <input type="submit" class="button mt-15" />
       </fieldset>
     </main>
 
