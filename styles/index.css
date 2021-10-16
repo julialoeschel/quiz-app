@@ -137,7 +137,7 @@ ul {
 }
 
 .nav__active {
-  background: #faecea;
+  background: #fae5df;
 }
 
 .create__headline {
@@ -157,6 +157,7 @@ ul {
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   margin: 2em;
+  margin-top: 50px;
 }
 
 .profile_picture {
