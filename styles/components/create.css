@@ -1,0 +1,16 @@
+.create__headline {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.create {
+  display: grid;
+  align-items: center;
+  border: none;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.create__headline--small {
+  color: #62637c;
+  font-size: 0.8em;
+}
