@@ -9,10 +9,48 @@
     <script type="module" src="index.js" defer></script>
   </head>
   <body class="body">
-    <main data-js="main-home" class="main hidden">
+    <main data-js="main-home" class="main">
       <h1 class="headline">Quiz-App</h1>
       <div class="card-sections">
-        <div data-js="card-set" class="card-set">
+        <div data-js="card-set" class="card-set py-20">
+          <svg
+            data-js="bookmark"
+            class="card-set__bookmarklabel"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewbox="0 0 24 24"
+          >
+            <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
+          </svg>
+
+          <h2 class="bold mt-15">Question</h2>
+          <p class="text-align__justified">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua?
+          </p>
+
+          <button data-js="btnAnswer" class="button" type="button">
+            <span data-js="showAnswer">show</span>
+            <span data-js="hideAnswer" class="hidden">hide</span>
+            answer
+          </button>
+          <h2 data-js="answerHeading" class="bold hidden">Answer</h2>
+          <p data-js="answer-text" class="text-align__justified hidden">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et.
+          </p>
+
+          <ul class="card-set__tag-list">
+            <li class="card-set__tag">#html</li>
+            <li class="card-set__tag">#css</li>
+            <li class="card-set__tag">#grid</li>
+            <li class="card-set__tag">#responsive</li>
+          </ul>
+        </div>
+
+        <div data-js="card-set" class="card-set py-20">
           <svg
             data-js="bookmark"
             class="card-set__bookmarklabel"
@@ -49,45 +87,7 @@
             <li class="card-set__tag">#responsive</li>
           </ul>
         </div>
-
-        <div data-js="card-set" class="card-set">
-          <svg
-            data-js="bookmark"
-            class="card-set__bookmarklabel"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewbox="0 0 24 24"
-          >
-            <path d="M18 24l-6-5.269-6 5.269v-24h12v24z" />
-          </svg>
-
-          <h2 class="bold">Question</h2>
-          <p class="text-align__justified">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua?
-          </p>
-
-          <button data-js="btnAnswer" class="button" type="button">
-            <span data-js="showAnswer">show</span>
-            <span data-js="hideAnswer" class="hidden">hide</span>
-            answer
-          </button>
-          <h2 data-js="answerHeading" class="bold hidden">Answer</h2>
-          <p data-js="answer-text" class="text-align__justified hidden">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et.
-          </p>
-
-          <ul class="card-set__tag-list">
-            <li class="card-set__tag">#html</li>
-            <li class="card-set__tag">#css</li>
-            <li class="card-set__tag">#grid</li>
-            <li class="card-set__tag">#responsive</li>
-          </ul>
-        </div>
-        <div data-js="card-set" class="card-set">
+        <div data-js="card-set" class="card-set py-20">
           <svg
             data-js="bookmark"
             class="card-set__bookmarklabel"
@@ -130,7 +130,7 @@
     <main data-js="main-bookmark" class="main hidden">
       <h1 class="headline">Bookmarks</h1>
       <div class="card-sections">
-        <div data-js="card-set" class="card-set">
+        <div data-js="card-set" class="card-set py-20">
           <svg
             data-js="bookmark"
             class="card-set__bookmarklabel"
@@ -168,7 +168,7 @@
           </ul>
         </div>
 
-        <div data-js="card-set" class="card-set">
+        <div data-js="card-set" class="card-set py-20">
           <svg
             data-js="bookmark"
             class="card-set__bookmarklabel"
@@ -205,7 +205,7 @@
             <li class="card-set__tag">#responsive</li>
           </ul>
         </div>
-        <div data-js="card-set" class="card-set">
+        <div data-js="card-set" class="card-set py-20">
           <svg
             data-js="bookmark"
             class="card-set__bookmarklabel"
@@ -245,7 +245,7 @@
       </div>
     </main>
 
-    <main data-js="main-create" class="main">
+    <main data-js="main-create" class="main hidden">
       <h1 class="headline">Create</h1>
       <fieldset class="create">
         <label class="create__headline" for="create-question"
