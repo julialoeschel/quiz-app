@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.body {
+  background-color: #fae5df;
+  color: #141850;
+}
+
+.headline {
+  background-color: #ed7966;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  z-index: 10;
+}
+
+.button {
+  justify-self: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-color: #fae5df;
+  padding: 5px;
+  border-color: #141850;
+  display: flex;
+  flex-direction: column;
+}

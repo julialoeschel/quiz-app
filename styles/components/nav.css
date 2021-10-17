@@ -1,0 +1,34 @@
+.nav {
+  background-color: #ed7966;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
+.nav__menubar {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.nav__homebutton {
+  color: #141850;
+  list-style: none;
+  height: 60px;
+  width: 60px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.nav__link {
+  justify-self: center;
+  display: grid;
+  align-self: center;
+  height: 60px;
+  width: 60px;
+}
+
+.nav__active {
+  background: #fae5df;
+}

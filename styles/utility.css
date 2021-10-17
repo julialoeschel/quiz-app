@@ -5,14 +5,47 @@
 .blue {
   color: #141850;
 }
-.input-hidden {
-  opacity: 0;
+
+.mt-15 {
+  margin-top: 15px;
 }
 
-.bookmark--booked {
-  fill: azure;
+.py-20 {
+  padding: 0 20px;
 }
 
-.xx {
-  background: turquoise;
+.hidden {
+  display: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+svg {
+  fill: #303179;
+  transform: scale(1.8);
+  justify-self: center;
+  align-self: center;
+}
+
+.text-align__justified {
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
 }
