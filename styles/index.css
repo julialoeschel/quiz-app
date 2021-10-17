@@ -1,22 +1,28 @@
 * {
   box-sizing: border-box;
-  margin-left: 0;
+  margin: 0;
 }
 
 .body {
   background-color: #fae5df;
   color: #141850;
-  display: grid;
-  grid-template-rows: 60px auto 60px;
 }
+
 .headline {
   background-color: #ed7966;
-  position: fixed;
-  width: 100%;
   top: 0;
-  font-family: calibri;
-  margin: 0;
+  width: 100%;
+  position: fixed;
   text-align: center;
+  z-index: 10;
+}
+
+.card-sections {
+  display: grid;
+  overflow: hidden;
+  gap: 10px;
+  margin-top: 40px;
+  margin-bottom: 70px;
 }
 
 .card-set__bookmarklabel {
@@ -32,12 +38,9 @@
   fill: #ee632c;
 }
 
-.main {
-  display: grid;
-  grid-gap: 10px;
-}
 .card-set {
   display: grid;
+  gap: 10px;
   border-style: outset;
   background: #e6cbb5;
   width: 96%;
@@ -59,7 +62,15 @@
   flex-direction: column;
 }
 
-.card-set__ul-card {
+.mt-15 {
+  margin-top: 15px;
+}
+
+.py-20 {
+  padding: 0 20px;
+}
+
+.card-set__tag-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 5px;
@@ -78,7 +89,7 @@
   text-align: center;
 }
 
-.card-set__blocksatz {
+.text-align__justified {
   text-align: justify;
   margin: 0;
   padding: 0;
@@ -87,13 +98,15 @@
 
 .nav {
   background-color: #ed7966;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   position: fixed;
 }
 .nav__menubar {
-  display: grid;
+  display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
 
 .nav__homebutton {
@@ -101,10 +114,12 @@
   list-style: none;
   height: 60px;
   width: 60px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
 .nav__link {
-  display: inline-block;
   justify-self: center;
   display: grid;
   align-self: center;
@@ -130,7 +145,7 @@ ul {
 }
 
 .nav__active {
-  background: #faecea;
+  background: #fae5df;
 }
 
 .create__headline {
@@ -142,6 +157,12 @@ ul {
   display: grid;
   align-items: center;
   border: none;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.create__headline--small {
+  color: #62637c;
+  font-size: 0.8em;
 }
 
 .profile {
@@ -150,6 +171,7 @@ ul {
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   margin: 2em;
+  margin-top: 50px;
 }
 
 .profile_picture {

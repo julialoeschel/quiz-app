@@ -1,28 +1,100 @@
-const toggleAnswerButton = document.querySelector(".js-btn-answer");
-const showAnswer = document.querySelector(".js-btn-showAnswer");
-const hideAnswer = document.querySelector(".js-btn-hideAnswer");
-const showAnswerH = document.querySelector(".js-answer-heading ");
-const hideAnswerT = document.querySelector(".js-answer-text");
-const bookmark = document.querySelector(".js-bookmark");
-const homebtn = document.querySelector(".js-home-btn");
-const bookmarkbtn = document.querySelector(".js-bookmark-btn");
+const cardSet = document.querySelectorAll("[data-js=card-set]");
 
-toggleAnswerButton.addEventListener("click", () => {
-  showAnswer.classList.toggle("hidden");
-  hideAnswer.classList.toggle("hidden");
-  showAnswerH.classList.toggle("hidden");
-  hideAnswerT.classList.toggle("hidden");
+cardSet.forEach((card) => {
+  const bookmark = card.querySelector("[data-js=bookmark]");
+  const answerBtn = card.querySelector("[data-js=btnAnswer]");
+  const showAnswer = card.querySelector("[data-js=showAnswer]");
+  const hideAnswer = card.querySelector("[data-js=hideAnswer]");
+  const answerHeading = card.querySelector("[data-js=answerHeading]");
+  const answerText = card.querySelector("[data-js=answer-text]");
+
+  bookmark.addEventListener("click", () => {
+    bookmark.classList.toggle("card-set__bookmarklabel--booked");
+  });
+
+  answerBtn.addEventListener("click", () => {
+    showAnswer.classList.toggle("hidden");
+    hideAnswer.classList.toggle("hidden");
+    answerHeading.classList.toggle("hidden");
+    answerText.classList.toggle("hidden");
+  });
 });
 
-bookmark.addEventListener("click", () => {
-  bookmark.classList.toggle("card-set__bookmarklabel--booked");
+const homeBtn = document.querySelector("[data-js=home-button]");
+const bookmarkBtn = document.querySelector("[data-js=bookmark-button]");
+const createBtn = document.querySelector("[data-js=create-button]");
+const profileBtn = document.querySelector("[data-js=profile-button]");
+
+const homePage = document.querySelector("[data-js=main-home]");
+const bookmarkPage = document.querySelector("[data-js=main-bookmark]");
+const createPage = document.querySelector("[data-js=main-create]");
+const profilePage = document.querySelector("[data-js=main-profile]");
+
+homeBtn.addEventListener("click", () => {
+  homeBtn.classList.add("nav__active");
+  bookmarkBtn.classList.remove("nav__active");
+  createBtn.classList.remove("nav__active");
+  profileBtn.classList.remove("nav__active");
+
+  homePage.classList.remove("hidden");
+  bookmarkPage.classList.add("hidden");
+  createPage.classList.add("hidden");
+  profilePage.classList.add("hidden");
 });
 
-homebtn.addEventListener("click", () => {
-  homebtn.classList.add("nav__active");
-  bookmarkbtn.classList.remove("nav__active");
+bookmarkBtn.addEventListener("click", () => {
+  homeBtn.classList.remove("nav__active");
+  bookmarkBtn.classList.add("nav__active");
+  createBtn.classList.remove("nav__active");
+  profileBtn.classList.remove("nav__active");
+
+  homePage.classList.add("hidden");
+  bookmarkPage.classList.remove("hidden");
+  createPage.classList.add("hidden");
+  profilePage.classList.add("hidden");
 });
-bookmarkbtn.addEventListener("click", () => {
-  bookmarkbtn.classList.add("nav__active");
-  homebtn.classList.remove("nav__active");
+
+createBtn.addEventListener("click", () => {
+  homeBtn.classList.remove("nav__active");
+  bookmarkBtn.classList.remove("nav__active");
+  createBtn.classList.add("nav__active");
+  profileBtn.classList.remove("nav__active");
+
+  homePage.classList.add("hidden");
+  bookmarkPage.classList.add("hidden");
+  createPage.classList.remove("hidden");
+  profilePage.classList.add("hidden");
+});
+
+profileBtn.addEventListener("click", () => {
+  homeBtn.classList.remove("nav__active");
+  bookmarkBtn.classList.remove("nav__active");
+  createBtn.classList.remove("nav__active");
+  profileBtn.classList.add("nav__active");
+
+  homePage.classList.add("hidden");
+  bookmarkPage.classList.add("hidden");
+  createPage.classList.add("hidden");
+  profilePage.classList.remove("hidden");
+});
+
+const createAddQuestion = document.querySelector("[data-js=text-addquestion]");
+const amountLeftAddQuestion = document.querySelector(
+  "[data-js=create-amount-add-question]"
+);
+const createAddAnswer = document.querySelector("[data-js=text-addanswer]");
+const amountLeftAddAnswer = document.querySelector(
+  "[data-js=create-amount-add-answer]"
+);
+
+createAddQuestion.addEventListener("input", () => {
+  const questionTextLength = createAddQuestion.value.length;
+  const maxLengthAddQuestion = createAddQuestion.maxLength;
+  amountLeftAddQuestion.innerText = maxLengthAddQuestion - questionTextLength;
+  console.log(maxLengthAddQuestion);
+});
+
+createAddAnswer.addEventListener("input", () => {
+  amountLeftAddAnswer.innerText =
+    createAddAnswer.maxLength - createAddAnswer.value.length;
 });
