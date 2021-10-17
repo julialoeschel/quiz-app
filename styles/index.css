@@ -66,7 +66,7 @@
   margin-top: 15px;
 }
 
-.card-set__ul-card {
+.card-set__tag-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 5px;
@@ -85,7 +85,7 @@
   text-align: center;
 }
 
-.card-set__blocksatz {
+.text-align__justified {
   text-align: justify;
   margin: 0;
   padding: 0;
