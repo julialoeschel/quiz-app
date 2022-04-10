@@ -2,6 +2,7 @@ const cardSet = document.querySelectorAll("[data-js=card-set]");
 
 export function toggleCard() {
   cardSet.forEach((card) => {
+    console.log(card)
     const bookmark = card.querySelector("[data-js=bookmark]");
     const answerBtn = card.querySelector("[data-js=btnAnswer]");
     const showAnswer = card.querySelector("[data-js=showAnswer]");

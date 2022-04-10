@@ -14,7 +14,7 @@ export function count() {
     const questionTextLength = createAddQuestion.value.length;
     const maxLengthAddQuestion = createAddQuestion.maxLength;
     amountLeftAddQuestion.innerText = maxLengthAddQuestion - questionTextLength;
-    console.log(maxLengthAddQuestion);
+
   });
 
   createAddAnswer.addEventListener("input", () => {
